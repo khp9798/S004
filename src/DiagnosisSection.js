@@ -6,10 +6,10 @@ function DiagnosisSection({ selectedDevice }) {
       <h3>문제 진단</h3>
       <div style={styles.content}>
         <p>
-          <strong>{selectedDevice} 문제:</strong> {selectedDevice}의 센서 데이터에서 이상 징후가 감지됨.
+          <strong>{selectedDevice} 이상징후:</strong> 센서 데이터에서 주기적 상승이 감지됨
         </p>
         <p>
-          <strong>추정 원인:</strong> 센서 오작동 또는 사용자 부주의 가능성.
+          <strong>추정 원인:</strong> 센서 오작동 또는 사용자 부주의
         </p>
       </div>
     </div>

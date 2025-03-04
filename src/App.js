@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
-import Header from './Header';
 import Sidebar from './Sidebar';
+import Header from './Header';
 import MainContent from './MainContent';
 
 function App() {
-  const [selectedDevice, setSelectedDevice] = useState('냉장고'); // 기본 선택: 냉장고
+  const [selectedDevice, setSelectedDevice] = useState('냉장고');
 
   const handleDeviceSelect = (device) => {
     setSelectedDevice(device);
-    // 여기서 데이터 분석 및 LLM 추론 로직을 트리거할 수 있습니다.
-    console.log(`Device selected: ${device}. Triggering analysis/inference...`);
+    console.log(`Device selected: ${device}`);
+    // 실제 서비스에서는 여기서 LLM 추론/데이터 분석 로직 등을 트리거
   };
 
   return (
@@ -28,7 +28,7 @@ const styles = {
     display: 'flex',
     minHeight: '100vh',
     fontFamily: 'sans-serif',
-    backgroundColor: '#f9f9f9'
+    backgroundColor: '#f0f2f5'
   },
   rightSection: {
     flex: 1,

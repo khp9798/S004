@@ -1,12 +1,11 @@
 import React from 'react';
 
 function Sidebar({ onDeviceSelect }) {
-  const devices = ['냉장고', '세탁기', '에어컨']; // 예시 기기 목록
+  const devices = ['냉장고', '세탁기', '에어컨'];
 
   return (
     <div style={styles.sidebar}>
       <h3 style={styles.title}>고객 정보</h3>
-      {/* 기본 정보 */}
       <div style={styles.section}>
         <h4>기본 정보</h4>
         <p>고객명: 김말랑</p>
@@ -14,7 +13,6 @@ function Sidebar({ onDeviceSelect }) {
         <p>생년월일: 1985-05-05</p>
       </div>
 
-      {/* 기기 목록 */}
       <div style={styles.section}>
         <h4>기기 목록</h4>
         {devices.map((device, idx) => (
@@ -28,7 +26,6 @@ function Sidebar({ onDeviceSelect }) {
         ))}
       </div>
 
-      {/* 상담 이력 */}
       <div style={styles.section}>
         <h4>상담 이력</h4>
         <div style={styles.historyItem}>
@@ -41,9 +38,7 @@ function Sidebar({ onDeviceSelect }) {
         </div>
       </div>
 
-      {/* 버튼 영역 */}
       <div style={styles.buttonContainer}>
-        <button style={styles.btnCall}>전화 걸기</button>
         <button style={styles.btnEnd}>통화 종료</button>
       </div>
     </div>
@@ -66,11 +61,12 @@ const styles = {
     marginBottom: '20px'
   },
   deviceButton: {
-    padding: '8px',
-    marginBottom: '5px',
+    display: 'block',
     width: '100%',
-    border: '1px solid #ddd',
+    marginBottom: '5px',
+    padding: '8px',
     borderRadius: '4px',
+    border: '1px solid #ddd',
     backgroundColor: '#eee',
     cursor: 'pointer'
   },
@@ -85,14 +81,6 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
     gap: '10px'
-  },
-  btnCall: {
-    padding: '10px',
-    backgroundColor: '#3399ff',
-    color: '#fff',
-    border: 'none',
-    borderRadius: '4px',
-    cursor: 'pointer'
   },
   btnEnd: {
     padding: '10px',

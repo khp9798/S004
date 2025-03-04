@@ -4,7 +4,7 @@ function Header() {
   return (
     <div style={styles.header}>
       <div style={styles.left}>
-        <h2 style={{ margin: 0 }}>고객지원 대시보드</h2>
+        <h4 style={{ margin: 0 }}>고객지원 대시보드</h4>
       </div>
       <div style={styles.right}>
         <span style={{ marginRight: '20px' }}>홍길동 상담사</span>
